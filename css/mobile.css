@@ -1,0 +1,326 @@
+.header {
+  background-image: url(images/banner-mobile.jpg); 
+}
+
+.header-container {
+  width: 100%;
+}
+
+.menu-container {
+  flex-direction: column-reverse;
+  padding-top: 23px;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  gap: 175px;
+}
+
+.menu-logo {
+  width: 270px;
+}
+
+.menu-list {
+  display: none;
+}
+
+.header-navigation {
+    padding-left: 85%;
+}
+
+.header-menu-button {
+  width: 23px;
+  height: 19px;
+  background-color: transparent;
+  position: relative;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.header-menu-button::before {
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+}
+
+.header-menu-button::after {
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+}
+
+.header-menu-button-label {
+  width: 100%;
+  height: 3px;
+  margin-top: -0.05em;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.header-title {
+  font-size: 26px;
+  line-height: 35px;
+  padding-top: 30px;
+  padding-bottom: 213px;
+}
+
+.trends {
+  padding-top: 39px;
+}
+
+.trends-header {
+  font-size: 16px;
+}
+
+.trends-header-text::after {
+  margin: 7px auto 25px;
+}
+
+.trends-container {
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+@media (orientation: landscape) { 
+  .trend-card {
+    width: calc((100% - 3 * 4px) / 2);
+  }
+}
+
+@media (orientation: portrait) { 
+  .trend-card {
+    width: 100%;
+    height: 231px;
+  }
+}
+
+.trend-img {
+  width: 100%;
+  height: 231px;
+}
+
+.trend-card-text {
+  bottom: 16px;
+  left: 15px;
+  right: 15px;
+}
+
+.trend-title {
+  font-size: 1rem;
+}
+
+.content {
+  width: 100%;
+  padding: 15px;
+  padding-top: 47px;
+  flex-direction: column;
+
+}
+
+.main {
+  width: 100%;
+  padding-left: 0;
+}
+
+.article {
+  flex-direction: column;
+  margin-bottom: 39px;
+}
+
+.article:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #eeeeee;
+  margin: auto;
+}
+
+.article-img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 11px;
+  background-color: transparent;
+}
+
+.article-title {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+}
+
+.article-date-author {
+  margin-bottom: 13px;
+}
+
+.article-content-text {
+  padding-bottom: 11px;
+}
+
+.article-content-text > .article-content-paragraph {
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 19px;
+}
+
+.aside {
+  width: 100%;
+  padding-right: 0;
+}
+
+.aside-sidebar {
+  margin-left: 0;
+  padding-bottom: 40px;
+}
+
+.aside-header-text {
+  font-size: 16px;
+  margin-bottom: 23px;
+}
+
+.new-post-search {
+  width: 100%;
+  margin-top: 41px;
+}
+
+.mailing-form-field {
+  width: 100%
+}
+
+.mailing-form-button {
+  width: 100%
+}
+
+.ad-block {
+  width: 100%;
+}
+
+.ad-block-header {
+  font-size: 16px;
+}
+
+.products {
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.products-container {
+  max-width: 259px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: stretch;
+}
+
+.products-container:nth-child(n + 2) {
+  margin-top: 77px;
+}
+
+
+.product-body {
+  margin: -3em -0.9em;
+  padding: 3em 0.9em 0.9em 0.9em;
+}
+
+.product-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.product-footer {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.product-price {
+  font-size: 20px;
+  line-height: 0.7;
+  display: flex;
+}
+
+.product-price-old {
+  text-decoration: line-through;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.product-button {
+  border: none;
+  background-color: #b59f5b;
+  padding: 15px 27px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.product-rub {
+  margin-left: 4px;
+}
+
+.foother {
+  max-width: 698px;
+}
+
+.foother-blok {
+  padding: 0 15px;
+}
+
+.foother-list-item {
+  margin-left: 25px;
+}
+
+.popup-container {
+  width: 92%
+}
+
+.popup-close {
+  right: 1px;
+  top: -31px;
+}
+
+.svg-popup-close {
+  width: 27px;
+}
+
+.form-title {
+  font-size: 1rem;
+}
+
+.form-item {
+  background-size: 10px;
+}
+
+.radio-group {
+  padding-right: 33px;
+}
+
+.radio-group:before {
+  width: 26px;
+  height: 26px;
+  background-size: 25px;
+}
+
+.radio-label {
+  margin-bottom: 26px;
+}

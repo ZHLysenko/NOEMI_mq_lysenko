@@ -1,0 +1,10 @@
+html, body, h1, h2, h3, h4, h5, h6, div, p, header, nav, article, main, aside, section, footer, address, a, img, ul, li, time, label, input, button, form, span, label, span, select, option, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: none;
+	list-style-type: none;
+	color: inherit;
+	font: inherit;	
+	box-sizing: border-box;
+}
