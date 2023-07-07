@@ -5,13 +5,14 @@
 
 .header-container {
   max-width: 698px;
+  padding-bottom: 113px;
 }
 
 .menu-container {
-  padding-top: 43px;
-  padding-right: 1%;
-  padding-left: 1%;
-  padding-bottom: 85px;
+  padding-top: 15px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 85px;
 }
 
 .menu-logo {
@@ -25,7 +26,7 @@
 .header-title {
   font-size: 40px;
   line-height: 55px;
-  padding-bottom: 113px;
+  max-width: 630px;
 }
 
 .header-navigation {
@@ -103,16 +104,16 @@
   }
 }
 
-.trend-title {
-  font-size: 0.9rem;
+.trend-card-text {
+  margin: 19% 5% 5% 5%;
 }
 
 .content {
   max-width: 698px;
+  padding-top: 45px;
 }
 
 .main {
-  padding: 15px;
   width: 381px;
 }
 
@@ -199,93 +200,28 @@
   font-size: 18px;
 }
 
-@media (min-width: 685px) and (max-width: 1999px){
-    .products {
+.products {
     flex-wrap: wrap;
-    margin-right: 35px;
-    margin-left: 35px;
+    
   }
 
-  .products-container {
-    max-width: 259px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    align-items: stretch;
-  }
-
-  .products-container:nth-child(n + 3) {
-    margin-top: 77px;
-  } 
+.products-container {
+  width: calc(100% / 2 - 45px);
+    
+  flex-wrap: wrap;
+    
 }
 
-@media (min-width: 641px) and (max-width: 684px) {
-  .products {
-    flex-wrap: wrap;
-    margin-right: 30%;
-    margin-left: 30%;
-    flex-direction: column;
-  }
-
-  .products-container {
-    max-width: 259px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    align-items: stretch;
-  }
-
-  .products-container:nth-child(n + 2) {
-    margin-top: 77px;
-  }
+.product-img {
+  width: 100%;
 }
+
+.products-container:nth-child(n + 3) {
+  margin-top: 77px;
+} 
 
 .product-body {
-  margin: -3em -0.9em;
-  padding: 3em 0.9em 0.9em 0.9em;
-}
-
-.product-title {
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 3px;
-}
-
-.product-footer {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  font-weight: bold;
-  padding-top: 20px;
-}
-
-.product-price {
-  font-size: 20px;
-  line-height: 0.7;
-  display: flex;
-}
-
-.product-price-old {
-  text-decoration: line-through;
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-
-.product-button {
-  border: none;
-  background-color: #b59f5b;
-  padding: 15px 27px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: inherit;
-  font-size: 14px;
-  color: #ffffff;
-}
-
-.product-rub {
-  margin-left: 4px;
+  margin: -34px -14px 0px -14px;
 }
 
 .foother {

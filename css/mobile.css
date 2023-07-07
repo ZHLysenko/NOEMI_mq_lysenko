@@ -4,14 +4,15 @@
 
 .header-container {
   width: 100%;
+  padding-top: 23px;
 }
 
 .menu-container {
   flex-direction: column-reverse;
-  padding-top: 23px;
   padding-right: 0;
   padding-left: 0;
   padding-bottom: 0;
+  margin: 0;
   gap: 175px;
 }
 
@@ -70,7 +71,8 @@
   font-size: 26px;
   line-height: 35px;
   padding-top: 30px;
-  padding-bottom: 213px;
+  padding-bottom: 86px;
+  max-width: 355px;
 }
 
 .trends {
@@ -99,19 +101,16 @@
 @media (orientation: portrait) { 
   .trend-card {
     width: 100%;
-    height: 231px;
+    display: block;
   }
 }
 
 .trend-img {
   width: 100%;
-  height: 231px;
 }
 
 .trend-card-text {
-  bottom: 16px;
-  left: 15px;
-  right: 15px;
+  margin: 22% 5% 4% 5%;
 }
 
 .trend-title {
@@ -163,10 +162,6 @@
   margin-bottom: 13px;
 }
 
-.article-content-text {
-  padding-bottom: 11px;
-}
-
 .article-content-text > .article-content-paragraph {
   font-size: 14px;
   line-height: 20px;
@@ -210,72 +205,20 @@
 }
 
 .products {
-  flex-wrap: wrap;
-  margin: 0 auto;
+  flex-wrap: nowrap;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
 }
 
 .products-container {
-  max-width: 259px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-around;
-  align-items: stretch;
+  width: 100%;
 }
 
 .products-container:nth-child(n + 2) {
   margin-top: 77px;
 }
 
-
-.product-body {
-  margin: -3em -0.9em;
-  padding: 3em 0.9em 0.9em 0.9em;
-}
-
-.product-title {
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 3px;
-}
-
-.product-footer {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  font-weight: bold;
-  padding-top: 20px;
-}
-
-.product-price {
-  font-size: 20px;
-  line-height: 0.7;
-  display: flex;
-}
-
-.product-price-old {
-  text-decoration: line-through;
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-
-.product-button {
-  border: none;
-  background-color: #b59f5b;
-  padding: 15px 27px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: inherit;
-  font-size: 14px;
-  color: #ffffff;
-}
-
-.product-rub {
-  margin-left: 4px;
+.product-img {
+  width: 90%;
 }
 
 .foother {
