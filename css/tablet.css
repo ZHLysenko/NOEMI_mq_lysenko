@@ -111,6 +111,7 @@
 .content {
   max-width: 698px;
   padding-top: 45px;
+  gap: 35px;
 }
 
 .main {
