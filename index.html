@@ -266,9 +266,13 @@
             </div>
           </article>
           <form action="#" class="new-post-search">
-            <label class="new-post-search-group" for="new-post-search"></label>
+            <label class="new-post-search-group" for="new-post-search">
+              <span class="hidden-opesanie">Поле ввода</span>
+            </label>
             <input type="text" id="new-post-search" class="new-post-search-field" placeholder="Найти...">
-            <button type="submit" id="new-post-search" class="new-post-search-button"></button>
+            <button type="submit" id="new-post-search" class="new-post-search-button">
+              <span class="hidden-opesanie">Поле поиска</span>
+            </button>
           </form>
         </div>
 
@@ -278,9 +282,13 @@
           <h3 class="aside-header-text"><a href="#" class="aside-header-text-link">Рассылка</a></h3>
         </div>
         <div class="mailing-form">
-          <label class="mailing-form-group" for="mailing-form"></label>
+          <label class="mailing-form-group" for="mailing-form">
+            <span class="hidden-opesanie">Поле ввода для рассылки</span>
+          </label>
           <input type="text" id="mailing-form" class="mailing-form-field" placeholder="Ваш email-адрес">
-          <button id="mailing-form"class="mailing-form-button">Подписаться</button>
+          <button id="mailing-form"class="mailing-form-button">Подписаться
+            <span class="hidden-opesanie">Подписаться</span>
+          </button>
         </div>
       </section>
       <section class="aside-sidebar">
@@ -442,15 +450,14 @@
   </footer>
 
   <input type="checkbox" id="key" class="popup-toggle">
-  <div class="popup">
-    <label for="key" class="popup-close-baskground"></label>
-    
+  <div class="popup">    
         <div class="popup-container">
-          <label for="key" class="popup-close">
+          <button id="key" class="popup-close">
             <svg class="svg-popup-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 441 441">
               <path fill="#fff" stroke="#000" d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z" />
+              <span class="hidden-opesanie">Закрыть окно</span>
             </svg>
-          </label>
+          </button>
           <div class="form-title">Ваш фидбек</div>
           <label class="form-item-option">
             <span class="form-filling">Как часто вы заходите на сайт?</span>
